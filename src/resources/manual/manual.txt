@@ -1,0 +1,29 @@
+<H1>UCSS Overview</H1>
+<bar>
+<div>
+<20><JUSTIFY><^>W</^>hen the application starts, the user will be shown the splash page
+for this program. 
+</div>
+<div><CENTER><image>manual/splash.png scale=0.75</image><newline><CENTER><i>Splash Screen</i></div>
+<div>
+<JUSTIFY><^>T</^>o begin the user needs to login to a UCSS database, currently the only
+database is located on the CSIS.SVSU server. On the splash screen click on the login link provided
+<image>manual/select-login.png</image> whilst the following screen will appear.
+</div>
+<div><CENTER><image>manual/db-connect.png scale=0.75</image><newline><CENTER><i>Database Connection View</i></div>
+<div>
+<div>
+<JUSTIFY><^>F</^>ill in the user and password fields with your SVSU credentials which should already
+exist if you are faculty or a student. The rest of the fields are already filled out and should not be changed.
+</div>
+<div><CENTER><image>manual/db-login-user-and-password.png</image></div> 
+<div><CENTER>And finally click on the <i>Login </i> button to proceed <image>manual/login-button.png</image></div>
+<div>
+<JUSTIFY><^>T</^>he work bench appears, it currently has only a ribbon, each item on the ribbon are not initialized until the 
+item is selected. 
+</div>
+<div><CENTER><image>manual/work-bench.png</image><newline><CENTER><i>Workbench with Ribbon</i></div>
+<div>
+<JUSTIFY><^>S</^>elect the <i>Time Graph </i> tab on the ribbon. To view and edit course meetings. 
+</div>
+<div><CENTER><image>manual/time-graph-select.png</image><newline><CENTER><i>Time Graph Ribbon Details</i></div>

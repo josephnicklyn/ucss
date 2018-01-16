@@ -1,0 +1,13 @@
+<H1>University Course Management System</H1>
+<bar>
+<div>
+<20><JUSTIFY><^>T</^>his application is a tool to develop, maintain and deploy the creation of 
+course scheduling at a university. Connects to a remote database or a local <i>SQLite </i> file; using an 
+intuitive user interface to develop course scheduling, and to maintain professors,
+buildings and courses from within the same application.  Report generation and 
+deployment of scheduling to a web-site.
+<br><JUSTIFY><^>T</^>o use this application the user needs to be <ref:logged =login/> into a valid UCSS database
+server. The user will have to provide authentication to access a remote UCSS database or use a <ref:local =local> file.
+<br><^>V</^>iew the <ref:manual =manual>
+</div>
+
