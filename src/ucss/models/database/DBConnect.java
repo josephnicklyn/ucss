@@ -19,7 +19,6 @@ import javafx.beans.value.ChangeListener;
 import org.sqlite.SQLiteConfig;
 
 /**
- *jf4242nickly
  * @author Joseph Nicklyn JR.
  */
 public class DBConnect {

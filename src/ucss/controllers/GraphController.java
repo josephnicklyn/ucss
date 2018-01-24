@@ -118,9 +118,7 @@ public class GraphController {
         return gr;
     }
 
-    public GraphController() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
     /**
      * Creates a new graph of a building, this is the most basic creator.
@@ -1007,7 +1005,8 @@ public class GraphController {
      * @param eg EventGroupList
      */
     private static void clearSelectItemsGraphWalker(EventGroupList eg) {
-        eg.<RoomItem, MeetingItem>eventWalker( 
+        if (eg != null)
+            eg.<RoomItem, MeetingItem>eventWalker( 
                         new GraphWalker<RoomItem, MeetingItem>() {
 
                         @Override public boolean walkIinR(
@@ -1019,6 +1018,7 @@ public class GraphController {
                         }
                     }
                 );
+        
     }
     
     /**

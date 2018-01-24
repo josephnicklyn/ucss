@@ -71,19 +71,14 @@ public class Manual {
             stage.setTitle("Manual");
             
             stage.setScene(scene);
-            //stage.setX(e.getScreenX());
-            //stage.setY(e.getScreenY());
             
             stage.initStyle(StageStyle.DECORATED);
             stage.initModality(Modality.NONE);
             
             
         } else {
-            // if the stage already exits
             if (!stage.isShowing()) {
-                // if its not showing, relocate to the screenX/screenY of the drop
-                //stage.setX(e.getScreenX());
-                //stage.setY(e.getScreenY());
+           
             }
         }
         // show the stage

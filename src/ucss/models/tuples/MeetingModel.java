@@ -31,6 +31,8 @@ public class MeetingModel extends Model {
         startTime,
         duration;
 
+    private static int autoID = -1;
+    
     public MeetingModel(int id) {
         super(id);
         clearFlags();

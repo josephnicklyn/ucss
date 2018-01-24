@@ -11,6 +11,7 @@ import java.util.ArrayList;
  */
 public class TermModel extends Model {
     
+    private static int autoID = -1;
     private String 
         title = "", 
         startDate = "",
@@ -22,6 +23,12 @@ public class TermModel extends Model {
     
     public TermModel(int id) {
         super(id);
+    }
+    
+    public TermModel(String title) {
+        super((autoID-=1));
+        setTitle(title);
+        super.add(this);
     }
     
     public TermModel(

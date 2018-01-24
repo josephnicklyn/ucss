@@ -122,7 +122,6 @@ public class DatabaseController extends DBConnect {
     }
 
     private void loadDataForTerm(TermModel n) {
-        //System.out.println("LOADING TERM = " + n);
         if (loadingData)
             return;
         
@@ -137,7 +136,6 @@ public class DatabaseController extends DBConnect {
                     "SELECT * FROM sectionMeetings WHERE semester = %d ORDER BY course, section;",
                     n.getModelID()
                 );
-
         
             Connection c = null;
             ResultSet rs = null;

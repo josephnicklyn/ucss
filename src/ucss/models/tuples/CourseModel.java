@@ -39,6 +39,23 @@ public class CourseModel extends Model {
     public CourseModel(int id) {
         super(id);
     }
+    private static int autoID = -1;
+    
+    public CourseModel(
+        int department,
+        int credits,
+        String courseNumber,
+        String courseTitle,
+        String courseDescription
+    ) {
+        super((autoID-=1));
+        setDepartment(department);
+        setCredits(credits);
+        setCourseNumber(courseNumber);
+        setCourseTitle(courseTitle);
+        setCourseDescription(courseDescription);
+        super.add(this);
+    }
     
     public CourseModel(
         int id,

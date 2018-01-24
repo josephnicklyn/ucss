@@ -7,9 +7,9 @@ package ucss.views.ribbons;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.SeparatorMenuItem;
-import ucss.controllers.DatabaseController;
 import ucss.controllers.ProjectController;
 import ucss.ui.widgets.RibbonButton;
+import ucss.views.APIGetter;
 import ucss.views.Manual;
 
 /**
@@ -21,6 +21,9 @@ public class MenuRibbonButton extends RibbonButton {
     private final MenuItem mnuFileSave = new MenuItem("Save");
     private final MenuItem mnuFileLogout = new MenuItem("Logout");
     private final MenuItem mnuFileManual = new MenuItem("Manual");
+    
+    //private final MenuItem mnuAPIGetter = new MenuItem("SVSU API");
+    
     private final MenuItem mnuFileExit = new MenuItem("Exit");
     
     private ContextMenu contextMenu = new ContextMenu(
@@ -29,6 +32,7 @@ public class MenuRibbonButton extends RibbonButton {
             mnuFileLogout,
             new SeparatorMenuItem(),
             mnuFileManual,
+            //mnuAPIGetter,
             new SeparatorMenuItem(),
             mnuFileExit
         );
@@ -39,6 +43,7 @@ public class MenuRibbonButton extends RibbonButton {
         mnuFileManual.setOnAction( e -> { Manual.getInstance().showManual(); });
         mnuFileLogout.setOnAction( e -> { actionLogout(); });
         mnuFileSave.setOnAction( e -> { actionSave(); });
+        //mnuAPIGetter.setOnAction( e -> { actionAPI(); });
         mnuFileExit.setOnAction( e -> { 
             actionExit();
         });
@@ -57,6 +62,10 @@ public class MenuRibbonButton extends RibbonButton {
         ProjectController.getInstance().exitApplcation();
     }
     
+    public void actionAPI() {
+        new APIGetter(ProjectController.getInstance().getDatabaseController())
+                .showWindow();
+    }
     
     
 }

@@ -20,7 +20,6 @@
 package ucss.models.tuples;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import ucss.models.tuples.momentos.MeetingModelMomento;
 import ucss.models.tuples.momentos.Momento;
 import java.util.ArrayList;
@@ -374,6 +373,19 @@ public abstract class Model {
     
     private static HashMap<Integer, CourseModel> courseMap = new HashMap();
     
+    public static CourseModel getCourse(DepartmentModel dm, String value) {
+        
+        for(CourseModel m: getCourses()) {
+            if (m.getDepartmentModel() == dm) {
+                if (m.getCourseNumber().equalsIgnoreCase(value))
+                    return m;
+            }
+        }
+        
+        return null;
+    }
+    
+    
     public static CourseModel getCourse(int value) {
         
         CourseModel result = courseMap.get(value);
@@ -413,6 +425,15 @@ public abstract class Model {
     }
     
     private static HashMap<Integer, DepartmentModel> departmentMap = new HashMap();
+    
+    public static DepartmentModel getDepartment(String value) {
+        
+        for(DepartmentModel dm: getDepartments()) {
+            if (dm.getDepartmentName().equalsIgnoreCase(value))
+                return dm;
+        }
+        return null;
+    }
     
     public static DepartmentModel getDepartment(int value) {
         

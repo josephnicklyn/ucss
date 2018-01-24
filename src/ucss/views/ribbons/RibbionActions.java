@@ -40,6 +40,10 @@ public class RibbionActions extends RibbonItem implements ActionRequest {
         btnRedo.setPrefWidth(40);
         btnUndo.setDisable(true);
         btnRedo.setDisable(true);
+        
+        btnUndo.setOnAction( e -> {Model.getMeetingModelMomento().undo();});
+        btnRedo.setOnAction( e -> {Model.getMeetingModelMomento().redo();});
+        
         Model.getMeetingModelMomento().setOnAction(e -> {
             btnUndo.setDisable(!Model.getMeetingModelMomento().hasUndo());
             btnRedo.setDisable(!Model.getMeetingModelMomento().hasRedo());

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 John
+ * Copyright (C) 2017 Joseph Nicklyn
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@ import ucss.models.tuples.MeetingModel;
 import ucss.models.tuples.Model;
 
 /**
- *
- * @author John
+ * Tracks changes of meetings: adding, moving or deleting
+ * @author Joseph Nicklyn
  */
 public class MeetingModelMomento implements MomentoInterface {
     
